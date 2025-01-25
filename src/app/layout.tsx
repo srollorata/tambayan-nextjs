@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Sidebar from "@/components/sidebar";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -60,6 +61,7 @@ export default function RootLayout({
               </main>
             </div>
             <Toaster />
+            <Analytics />
           </ThemeProvider>
         </body>
       </html>
